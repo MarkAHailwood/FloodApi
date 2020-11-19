@@ -8,6 +8,6 @@ namespace FloodInfo.Api.Services
 {
     public interface IFloodServices
     {
-        Task<FloodModel> GetFloodData(string searchCriteria);
+        Task<string> GetFloodData(string searchCriteria);
     }
 }

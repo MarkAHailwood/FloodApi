@@ -11,7 +11,7 @@ namespace Giphy.Api
 {
     public class GetFloodData : IGetFloodData
     {
-        public async Task<FloodModel> ReturnFloodData(string searchCritera)
+        public async Task<string> ReturnFloodData(string searchCritera)
         {
             using (var client = new HttpClient())
             {
@@ -25,7 +25,9 @@ namespace Giphy.Api
                     json = await content.ReadAsStringAsync();
                 }
 
-                return JsonConvert.DeserializeObject<FloodModel>(json);
+                var rawData = JsonConvert.DeserializeObject<FloodModel>(json);
+                if (rawData.items.Count == 0) return "no flood data";
+                return rawData.items[0].message;
             }
         }
     }

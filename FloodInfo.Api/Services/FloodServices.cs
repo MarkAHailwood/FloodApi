@@ -12,7 +12,7 @@ namespace FloodInfo.Api.Services
             _floodData = floodData;
         }
 
-        public async Task<FloodModel> GetFloodData(string searchCriteria)
+        public async Task<string> GetFloodData(string searchCriteria)
         {
             return await _floodData.ReturnFloodData(searchCriteria);
         }
