@@ -1,0 +1,10 @@
+{
+  "version": 2,
+  "dgSpecHash": "V7gDu2E8+Fx/ZO5MI6jGDpiiN4Jvj2HIv76SjK/aT1EU0CtJ1PQfZ38zoaOjxv7GywUdG+CPl3WXazEzRXFXnw==",
+  "success": true,
+  "projectFilePath": "C:\\Users\\hmark\\source\\repos\\FloodInfo.Api\\FloodInfo.Api\\FloodInfo.Api.csproj",
+  "expectedPackageFiles": [
+    "C:\\Users\\hmark\\.nuget\\packages\\newtonsoft.json\\12.0.3\\newtonsoft.json.12.0.3.nupkg.sha512"
+  ],
+  "logs": []
+}
