@@ -25,10 +25,7 @@ namespace Giphy.Api
                     json = await content.ReadAsStringAsync();
                 }
 
-                var rawData = JsonConvert.DeserializeObject<FloodModel>(json);
-                string displayText = rawData.message;
-
-                return rawData;
+                return JsonConvert.DeserializeObject<FloodModel>(json);
             }
         }
     }
